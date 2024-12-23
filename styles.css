@@ -1,0 +1,699 @@
+
+@font-face {
+    font-family: 'Inknut Antiqua';
+    src: url('fonts/InknutAntiqua-Regular.ttf') format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Island Moments';
+    src: url('fonts/IslandMoments-Regular.ttf') format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Kalam';
+    src: url('fonts/Kalam-Regular.ttf') format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Italianno';
+    src: url('fonts/Italianno-Regular.ttf') format('truetype');
+    /* Add other formats if available */
+    font-weight: normal;
+    font-style: normal;
+}
+/* General Styles */
+body .index {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1, h2,h3 {
+    text-align: center;
+}
+
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+   
+    align-items: center;
+    background: #F5F5F5;
+   margin-bottom: 0%;
+   
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-links
+{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-links li {
+   
+    display: inline;
+    margin:0px 60px 5px 40px;
+}
+.navbar a:hover {
+    color: #4caf50; /* Example hover color */
+}
+
+.navbar a {
+    color: #000;
+    font-family: "Italianno";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.logo
+{
+    margin-right: 60px;
+}
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+}
+/* Dropdown menu styles */
+.dropdown-menu {
+    position: absolute;
+    top:52px;
+    left:18%;
+    width: 80%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(235, 121, 15, 0.90) 0%, rgba(169, 143, 11, 0.90) 100%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Italianno";
+    font-size: 3rem;
+    z-index: 1000;
+   
+}
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu li {
+    margin: 20px 0;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #f4f2f2;
+    transition: color 0.3s ease;
+   
+}
+
+.dropdown-menu a:hover {
+    color: #4caf50;
+}
+
+/* Show dropdown menu */
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        display: none; /* Hide navbar links by default */
+        position: relative;
+        width: 0px;
+    }
+    
+    
+    .menu-toggle {
+        margin-left: 50%;
+        display: flex; /* Show menu toggle button in mobile view */
+    }
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Introduction Section */
+.intro-section {
+     text-align: center; /* Centers the tagline */
+    padding: 40px 20px;
+    align-items: center;
+    background: linear-gradient(180deg, #BFBAF5 0%, #6F6D8F 100%);
+}
+.tagline {
+    font-family: "Island Moments";
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.intro{ 
+    margin-left: 20%;
+    display: flex;
+}
+.intro-text {
+   
+    color: #FFF;
+   font-family: "Kalam";
+   font-size: 2.1rem;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   margin-right: 5%;
+   flex:1;
+   text-align: left;
+}
+#head1
+{   
+    margin-bottom: 2px;
+    color: #000;
+    font-family: "Instrument Sans";
+    font-size: 3.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    
+}
+
+.highlight {
+    color: #F2FF00;
+    font-family: "Instrument Sans";
+    font-size: 3.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;}
+.intro-image{flex:1;}
+.intro-image img {
+    max-width: 400px;
+    border-radius: 20%;
+    margin-right: 20%;
+}
+/* Approach section container */
+.approach {
+    margin-left: 0;
+    padding: 0px 0px;
+    background-color: #f4f4f4;
+}
+
+/* Flexbox container for side-by-side layout */
+.approach-content {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    justify-content: space-between; /* Ensures equal spacing between text and image */
+    gap: 20px; /* Space between text and image */
+}
+
+/* Left side: Text */
+.approach-text {
+    flex: 1; /* Text takes equal space */
+    text-align: left;
+    padding-right: 20px; /* Add spacing on the right */
+    color: #000;
+font-family: "Karma";
+font-size:1.6rem;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+margin-left: 3%;
+}
+
+
+/* Right side: Image */
+.approach-image {
+    width :auto;
+    height : auto;
+    flex: 1; /* Image takes equal space */
+    text-align: right;
+    
+}
+
+.approach-image img {
+    object-fit: fill;
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: 100%; /* Maintains aspect ratio */
+    border-radius: 3px; /* Optional: Adds rounded corners */
+}
+
+
+/* Skills Section */
+.skills-section {
+    background: url('images/si.png') no-repeat center/cover;
+    color: #fff;
+    padding-left: 20%;
+    padding: 40px;
+}
+
+.skills-bar {
+    margin-bottom: 15px;
+}
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.skill p
+{
+    flex:1.2;
+    text-align: center;
+}
+.percentage
+{
+    flex:.5
+}
+.barcontainer{flex:3;}
+.skills-bar .bar {
+    background:transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 10px;
+}
+
+.skills-bar .bar span {
+    background: #67EB33;
+    display: block;
+    height: 100%;
+}
+
+/* Projects Section */
+.projects-section {
+    margin-bottom: -100px;
+    background: #343188;
+    padding: 20px;
+    text-align: center;
+    color: #FFF;
+    font-family: "Inknut Antiqua";
+   
+}
+.projects-section a
+{
+    color: #FFF;
+}
+.project-gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    display: block;
+    margin: -100px ;
+    margin-top: 10%;
+    margin-left:27%;
+    max-width: 600px;
+    background-color: rgba(61, 97, 129, 0.9);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    z-index: 2;
+}
+.box
+{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+}
+.b2
+{
+    padding: 0% 2%;
+    flex:1;
+    font-size: .75rem;
+}
+
+.contact-section form {
+    flex:1.3;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.contact-section textarea 
+{
+    padding: 5px 10px 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact-section input
+ {  
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section .send {
+    border-radius: 50px;
+    background: #48C417;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+.social-icons
+{
+    border-radius: 40px;
+    background: #B3C689;
+}
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+.last
+
+{   position: relative;
+    height:200px;
+    background: rgba(66, 61, 61, 1);
+   z-index: 1;
+}
+footer
+{
+    display: flex;
+    background: rgba(66, 61, 61, 1);
+    justify-content: space-between;
+}
+footer a
+{ 
+    flex:1;
+}
+footer p
+{
+    font-family: "Island Moments";
+    flex:1;
+}
+footer img
+{
+    margin-left: 80%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skill {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .intro {
+        flex-direction: column; /* Stack text and image vertically */
+        margin-left: 0;
+    }
+    .intro-image img {
+        max-width: 270px;
+        border-radius: 20%;
+        margin-right: auto;
+    }
+    .intro-text {
+        text-align: center;
+    }
+
+    .approach-content {
+        flex-direction: column; /* Stack text and image vertically */
+    }
+    .approach-text {
+        text-align: center;
+    }
+    .skills-section {
+        padding: 20px;
+    }
+    .skill p
+{
+    flex:1;
+    text-align: left;
+    font-size: .65rem;
+}
+.projects-section h3
+{
+    font-size: 0.8rem;
+}
+.project-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-section {
+    position: relative;
+    display: block;
+    margin-bottom: -100px ;
+    margin-right: 0%;
+    margin-top: 10%;
+    margin-left:0%;
+    max-width: 80%;
+    background-color: rgba(61, 97, 129, 0.9);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    z-index: 2;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+}
+.b2
+{
+    padding: 0% 1%;
+    flex:1;
+}
+
+.contact-section form {
+    flex:1;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.contact-section textarea 
+{
+    padding: 5px 10px 60px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.contact-section input
+ {  
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-section .send {
+    border-radius: 50px;
+    background: #48C417;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 5%;
+   
+}
+.social-icons
+{
+    border-radius: 40px;
+    background: #B3C689;
+}
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
+footer img
+{
+    margin-left: 80%;
+}
+footer a
+{ 
+    flex:.5;
+}
+footer p
+{
+    flex:1;
+}
+.project1-content
+{
+   
+        display: flex;
+        flex-direction: column;
+}
+.project2-content
+{
+   
+        display: flex;
+        flex-direction: column;
+}
+
+}
+/* PROJECTS PAGE DESIGNES */
+.heading
+{   
+    font-size: 1.3rem;
+    margin-top: 0%;
+    color: #f4f2f2;
+    background: #2c73e6;
+    font-family: "Inkut Antiqua";
+}
+body .project_body
+{
+    background: #423D3D;
+}
+.project1-content
+{
+        background:#FEFFEC ;
+        display: flex;
+        align-items: center; /* Aligns items vertically */
+        justify-content: space-between; /* Ensures equal spacing between text and image */
+        
+        gap: 20px; /* Space between text and image */
+}
+.p1_left{overflow: hidden;flex:1;}
+.p1_left img
+{
+width: 100%;
+height:auto;
+object-fit: cover;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+.slideshow-container img
+{
+    max-width: 100%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.p1_right
+{   overflow: hidden;
+    flex:1;
+    background:#FEFFEC;
+    font-family: "karma";
+}
+.p1_right h2
+{
+    font-size: 2rem;
+}
+.p1_right h3
+{
+    font-size: 1.5rem;
+}
+
+.p1_right p
+{
+    font-size: 1.3rem;
+}
+.filler
+{  
+    background:#1B1FF0 ;
+}
+.filler p
+{   
+    margin: 0%;
+    font-size: 2.5rem;
+    color: #1B1FF0;
+}
+.project2-content
+{
+        background:#FEFFEC ;
+        display: flex;
+        align-items: center; /* Aligns items vertically */
+        justify-content: space-between; /* Ensures equal spacing between text and image */
+        
+        gap: 20px; /* Space between text and image */
+}
+.p2_right{overflow: hidden;flex:1;}
+.p2_right img
+{
+width: 100%;
+height:auto;
+object-fit: cover;
+border-radius: 5%;
+}
+.p2_left
+{   overflow: hidden;
+    flex:1;
+    background:#FEFFEC;
+    font-family: "karma";
+}
+.p2_left h2
+{
+    font-size: 2rem;
+}
+.p2_left h3
+{
+    font-size: 1.5rem;
+}
+
+.p2_leftt p
+{
+    font-size: 1.3rem;
+}
+.pf
+{   
+    padding-top: 5%;
+    height:60px;
+    font-size: 1.5rem;
+}
