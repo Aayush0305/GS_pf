@@ -422,6 +422,7 @@ footer p
 {
     font-family: "Island Moments";
     flex:1;
+    color: white;
 }
 footer img
 {
@@ -696,4 +697,20 @@ border-radius: 5%;
     padding-top: 5%;
     height:60px;
     font-size: 1.5rem;
+}
+.p1_right  a
+{
+    color: #000;
+}
+.p2_left  a
+{
+    color: #000;
+}
+.pf img
+{
+    border-radius: 40px;
+}
+.logo img
+{
+    border-radius: 40px;
 }
